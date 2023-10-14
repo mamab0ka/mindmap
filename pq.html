@@ -33,10 +33,11 @@
 
             <div class="container">
                 <div class="row justify-content-center  mt-sm-5">
-                    <div class="col-md-8 col-lg-6 col-xl-5">
+                    <div class="col-md-12 col-lg-10 col-xl-9">
+                        <!-- col-md-10 col-lg-8 col-xl-7 -->
                         <div>
                             <div class="text-center mb-5">
-                                <a href="index-1.html" class="mb-3 d-block auth-logo">
+                                <a href="index.html" class="mb-3 d-block auth-logo">
                                     <!-- <img src="images/logo-light.png" alt="" height="22" class="logo"> -->
                                     LOGO
                                 </a>
@@ -52,53 +53,146 @@
                                     </div>
 
                                     <div class="p-2 mt-4">
-                                        <form action="index-1.html">
-                                        
+                                        <form action="index.html">
                                             <!-- Additional Questions -->
+                                        
+                                            <!-- Question 1: Age -->
                                             <div class="mb-3">
-                                                <label for="gender-input">What is your gender?</label>
-                                                <select class="form-select" id="gender-input">
-                                                    <option value="male">Male</option>
-                                                    <option value="female">Female</option>
-                                                    <option value="other">Other</option>
+                                                <label for="age-input">How old are you?</label>
+                                                <select class="form-select" id="age-input">
+                                                    <option value="15-25">15-25</option>
+                                                    <option value="26-35">26-35</option>
+                                                    <option value="36-45">36-45</option>
+                                                    <option value="46-55">46-55</option>
+                                                    <option value="56-65">56-65</option>
+                                                    <option value="Above 65">Above 65</option>
                                                 </select>
                                             </div>
+                                        
+                                            <!-- Question 2: Mood -->
                                             <div class="mb-3">
-                                                <label for="age-input">What is your age?</label>
-                                                <input type="number" class="form-control" id="age-input" placeholder="Enter Age">
+                                                <label for="mood-input">How would you describe your current mood?</label>
+                                                <select class="form-select" id="mood-input">
+                                                    <option value="Happy">Happy</option>
+                                                    <option value="Sad">Sad</option>
+                                                </select>
                                             </div>
+                                        
+                                            <!-- Question 3: Feelings -->
                                             <div class="mb-3">
-                                                <label for="feelings-input">What are you feeling?</label>
-                                                <textarea class="form-control" id="feelings-input" placeholder="Enter Feelings"></textarea>
+                                                <label for="feelings-input">Have you been feeling sad, anxious, or irritable lately?</label>
+                                                <select class="form-select" id="feelings-input">
+                                                    <option value="Yes">Yes</option>
+                                                    <option value="No">No</option>
+                                                </select>
                                             </div>
+                                        
+                                            <!-- Question 4: Struggling Emotions -->
+                                            <div class="mb-3">
+                                                <label for="struggling-emotions-input">Are there any specific emotions you're struggling with?</label>
+                                                <input type="text" class="form-control" id="struggling-emotions-input" placeholder="Enter Emotions">
+                                            </div>
+                                        
+                                            <!-- Question 5: Sleep Hours -->
+                                            <div class="mb-3">
+                                                <label for="sleep-hours-input">How much do you sleep in a day?</label>
+                                                <select class="form-select" id="sleep-hours-input">
+                                                    <option value="10 hours">10 hours</option>
+                                                    <option value="8 hours">8 hours</option>
+                                                    <option value="7 hours">7 hours</option>
+                                                    <option value="6 hours">6 hours</option>
+                                                    <option value="5 hours">5 hours</option>
+                                                    <option value="Less than 5 hours">Less than 5 hours</option>
+                                                </select>
+                                            </div>
+                                        
+                                            <!-- Question 6: Sleep Troubles -->
+                                            <div class="mb-3">
+                                                <label for="sleep-troubles-input">Do you have trouble falling asleep or staying asleep?</label>
+                                                <select class="form-select" id="sleep-troubles-input">
+                                                    <option value="Yes">Yes</option>
+                                                    <option value="No">No</option>
+                                                    <option value="Change in sleeping pattern">Change in sleeping pattern</option>
+                                                </select>
+                                            </div>
+                                        
+                                            <!-- Question 7: Changes in Motivation -->
+                                            <div class="mb-3">
+                                                <label for="motivation-changes-input">Have you noticed changes in your motivation or interest in activities?</label>
+                                                <select class="form-select" id="motivation-changes-input">
+                                                    <option value="Yes">Yes</option>
+                                                    <option value="No">No</option>
+                                                </select>
+                                            </div>
+
+                                            <!-- Question 8: Thoughts of Self-Harm or Suicide -->
+                                            <div class="mb-3">
+                                                <label for="self-harm-thoughts-input">Have you had thoughts of self-harm or suicide?</label>
+                                                <select class="form-select" id="self-harm-thoughts-input">
+                                                    <option value="Yes">Yes</option>
+                                                    <option value="No">No</option>
+                                                </select>
+                                            </div>
+
+                                            <!-- Question 9: Relationships with Friends and Family -->
+                                            <div class="mb-3">
+                                                <label for="relationships-input">How are your relationships with friends and family?</label>
+                                                <select class="form-select" id="relationships-input">
+                                                    <option value="Good">Good</option>
+                                                    <option value="Bad">Bad</option>
+                                                    <option value="Friendly">Friendly</option>
+                                                    <option value="Detached">Detached</option>
+                                                </select>
+                                            </div>
+
+                                            <!-- Question 10: Difficulty Connecting Socially -->
+                                            <div class="mb-3">
+                                                <label for="social-difficulty-input">Do you find it challenging to connect with others or engage in social activities?</label>
+                                                <select class="form-select" id="social-difficulty-input">
+                                                    <option value="Yes">Yes</option>
+                                                    <option value="No">No</option>
+                                                </select>
+                                            </div>
+
+                                            <!-- Question 11: Current Stressors -->
+                                            <div class="mb-3">
+                                                <label for="stressors-input">What stressors are you currently facing? (Write some causes if applicable)</label>
+                                                <input type="text" class="form-control" id="stressors-input" placeholder="Enter Stressors">
+                                            </div>
+
+                                            <!-- Question 12: Coping with Stress -->
+                                            <div class="mb-3">
+                                                <label for="coping-stress-input">How do you typically cope with stress?</label>
+                                                <input type="text" class="form-control" id="coping-stress-input" placeholder="Enter Coping Methods">
+                                            </div>
+
+                                            <!-- Question 13: Coping with Substances -->
+                                            <div class="mb-3">
+                                                <label for="coping-substances-input">Do you use alcohol, drugs, or other substances to cope with your feelings?</label>
+                                                <select class="form-select" id="coping-substances-input">
+                                                    <option value="Yes used">Yes, I've used</option>
+                                                    <option value="Never used">No, I've never used</option>
+                                                </select>
+                                            </div>
+
+                                            <!-- Question 14: Past Diagnosis -->
+                                            <div class="mb-3">
+                                                <label for="past-diagnosis-input">Have you ever been diagnosed with a mental health condition?</label>
+                                                <select class="form-select" id="past-diagnosis-input">
+                                                    <option value="Yes">Yes</option>
+                                                    <option value="No">No</option>
+                                                </select>
+                                            </div>
+
                                             
-                                            <div class="mb-3">
-                                                <label for="occupation-input">What is your occupation?</label>
-                                                <select class="form-select" id="occupation-input">
-                                                    <option value="student">Student</option>
-                                                    <option value="teacher">Teacher</option>
-                                                    <option value="service-holder">Service holder</option>
-                                                    <option value="house-wife">House wife</option>
-                                                    <option value="other">Other</option>
-                                                </select>
-                                            </div>
-                                            <div class="mb-3">
-                                                <label for="mental-health-input">Which mental health problem do you suffer from?</label>
-                                                <input type="text" class="form-control" id="mental-health-input" placeholder="Enter Mental Health Problem">
-                                            </div>
-                                            <div class="mb-3">
-                                                <label for="syndrome-input">What is your main syndrome?</label>
-                                                <input type="text" class="form-control" id="syndrome-input" placeholder="Enter Main Syndrome">
-                                            </div>
-                                            <div class="mb-3">
-                                                <label for="medical-issue-input">Are you having any other medical issue?</label>
-                                                <input type="text" class="form-control" id="medical-issue-input" placeholder="Enter Medical Issue">
-                                            </div>
+
+
                                         
                                             <div class="mt-3 d-grid">
-                                                <a href="profile-p.html" class="btn btn-info btn-block" type="submit">Submit</a>
+                                                <a href="pq-2.html" class="btn btn-info btn-block" type="submit">Next</a>
                                             </div>
                                         </form>
+                                        
                                         
                                         <!-- end form -->
                                     </div>
